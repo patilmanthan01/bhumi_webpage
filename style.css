@@ -1,1 +1,57 @@
+/* ==========================================================================
+   Project BHUMI - Custom Stylesheet
+   ========================================================================== */
 
+/* Smooth card hover lift effect */
+.feature-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(45, 106, 79, 0.15);
+}
+
+/* ==========================================================================
+   Custom Buttons (Matching BHUMI UI Theme)
+   ========================================================================== */
+
+/* Primary Pill Button - Open Repository Link */
+.btn-bhumi-primary {
+  background: linear-gradient(135deg, #1e5631 0%, #2d6a4f 100%);
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 16px rgba(30, 86, 49, 0.3);
+}
+
+.btn-bhumi-primary:hover {
+  background: linear-gradient(135deg, #184728 0%, #245741 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(30, 86, 49, 0.4);
+}
+
+/* Secondary Pill Button - Open Deployment Link */
+.btn-bhumi-secondary {
+  background: #ffffff;
+  border: 2px solid #2d6a4f;
+  color: #1e5631;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.btn-bhumi-secondary:hover {
+  background: #eef8f1;
+  border-color: #1e5631;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(45, 106, 79, 0.16);
+}
+
+/* ==========================================================================
+   Background Pattern & Utilities
+   ========================================================================== */
+
+/* Subtle dotted grid texture across the page */
+.leaf-bg-pattern {
+  background-color: #f7faf8;
+  background-image: radial-gradient(#d8f3dc 1px, transparent 1px);
+  background-size: 24px 24px;
+}
