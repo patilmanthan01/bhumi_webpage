@@ -45,32 +45,23 @@
 
   <!-- ================= TOP INSTITUTIONAL HEADER ================= -->
   <header class="bg-white/95 backdrop-blur-md border-b border-emerald-100 shadow-sm sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col md:flex-row items-center justify-between gap-4">
       
-      <!-- Top Left: SIES Graduate School of Technology Logo & Branding -->
-      <div class="flex items-center gap-3.5">
-        <div class="flex items-center gap-2.5">
-          <!-- Rising Sun Icon -->
-          <svg class="w-11 h-11 text-amber-500 shrink-0" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true">
-            <circle cx="50" cy="50" r="18" fill="#F59E0B" />
-            <path d="M50 14 L50 2 M50 98 L50 86 M14 50 L2 50 M98 50 L86 50 M24.5 24.5 L16 16 M84 84 L75.5 75.5 M24.5 75.5 L16 84 M84 16 L75.5 24.5" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round"/>
-            <path d="M50 20 A30 30 0 0 1 80 50 A30 30 0 0 1 50 80 A30 30 0 0 1 20 50 A30 30 0 0 1 50 20" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,4"/>
-          </svg>
-          
-          <div class="flex flex-col">
-            <div class="flex items-center gap-2">
-              <span class="font-serif font-black tracking-tight text-2xl text-slate-900 leading-none">SIES</span>
-              <span class="bg-[#009FB7] text-white text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded tracking-wide">
-                Graduate School of Technology <span class="font-normal opacity-90">(Autonomous)</span>
-              </span>
-            </div>
-            <div class="flex items-center gap-2 text-[10px] sm:text-[11px] font-medium tracking-wider text-slate-600 uppercase mt-0.5">
-              <span>Rise with Education</span>
-              <span class="w-1 h-1 rounded-full bg-slate-400"></span>
-              <span class="text-emerald-700 font-bold">NAAC A+</span>
-            </div>
-          </div>
-        </div>
+      <!-- Top Left: Exact SIES College Logo Screenshot -->
+      <div class="flex items-center shrink-0">
+        <a 
+          href="Screenshot 2026-10-23 201559.png" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          title="SIES Graduate School of Technology"
+          class="block"
+        >
+          <img 
+            src="Screenshot 2026-10-23 201559.png" 
+            alt="SIES Graduate School of Technology Logo" 
+            class="h-12 sm:h-14 w-auto object-contain cursor-pointer transition-transform duration-200 hover:scale-105"
+          />
+        </a>
       </div>
 
       <!-- Top Right: Department Details -->
@@ -146,3 +137,86 @@
             Farmers face difficulties in selecting suitable crops and fertilizers due to variations in soil nutrients, rainfall, climate, and location.
           </p>
           <hr class="border-slate-200" />
+          <p class="font-normal text-slate-800">
+            <strong class="text-slate-900 font-semibold block mb-1 text-emerald-900 flex items-center gap-2">
+              <i class="fa-solid fa-lightbulb text-emerald-600 text-sm"></i> The BHUMI Solution:
+            </strong>
+            The system provides location-specific crop, fertilizer, and crop-protection recommendations using structured agricultural data and Python-based rule logic.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6 pt-2">
+          <div class="bg-emerald-50/60 border border-emerald-100 rounded-xl p-3 text-center">
+            <i class="fa-solid fa-vial text-emerald-700 text-lg mb-1 block"></i>
+            <span class="text-xs font-semibold text-slate-800">Soil Nutrients (NPK)</span>
+          </div>
+          <div class="bg-emerald-50/60 border border-emerald-100 rounded-xl p-3 text-center">
+            <i class="fa-solid fa-cloud-sun-rain text-emerald-700 text-lg mb-1 block"></i>
+            <span class="text-xs font-semibold text-slate-800">Climate &amp; Rainfall</span>
+          </div>
+          <div class="bg-emerald-50/60 border border-emerald-100 rounded-xl p-3 text-center">
+            <i class="fa-brands fa-python text-emerald-700 text-lg mb-1 block"></i>
+            <span class="text-xs font-semibold text-slate-800">Rule-Based Logic</span>
+          </div>
+          <div class="bg-emerald-50/60 border border-emerald-100 rounded-xl p-3 text-center">
+            <i class="fa-solid fa-shield-halved text-emerald-700 text-lg mb-1 block"></i>
+            <span class="text-xs font-semibold text-slate-800">Crop Protection</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="max-w-xl mx-auto w-full flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 px-4">
+      <a 
+        id="btn-repo"
+        href="https://github.com/PillaiSarveshX03/ProjectBHUMI" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold text-white btn-bhumi-primary text-sm sm:text-base group cursor-pointer"
+        title="Open GitHub Repository in a new tab"
+      >
+        <i class="fa-brands fa-github text-xl group-hover:scale-110 transition-transform"></i>
+        <span>Open Repository Link</span>
+        <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+      </a>
+
+      <a 
+        id="btn-deploy"
+        href="https://bhumi-bzr6.onrender.com/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold btn-bhumi-secondary text-sm sm:text-base group cursor-pointer"
+        title="Open Live Deployment on Render"
+      >
+        <i class="fa-solid fa-globe text-xl text-emerald-700 group-hover:rotate-12 transition-transform"></i>
+        <span>Open Deployment Link</span>
+        <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-80 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+      </a>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-xs sm:text-sm px-4 py-2.5 rounded-full shadow-2xl flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300 z-50">
+      <i class="fa-solid fa-circle-check text-emerald-400"></i>
+      <span id="toast-message">Opening link in a new tab...</span>
+    </div>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-white border-t border-slate-200 py-6 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500">
+      <p class="font-medium text-slate-700">Project BHUMI &bull; Academic Project Showcase</p>
+      <p class="mt-1">
+        SIES Graduate School of Technology (Autonomous), Navi Mumbai &bull; Department of CSE (IoT, Cyber Security &amp; Blockchain)
+      </p>
+      <p class="mt-2 text-slate-400">
+        &copy; 2026 Project BHUMI Team. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- External JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
