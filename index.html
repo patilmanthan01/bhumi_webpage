@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project BHUMI | SIES Graduate School of Technology</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bhumi: {
+              dark: '#1B4D3E',
+              primary: '#2D6A4F',
+              accent: '#52B788',
+              mint: '#D8F3DC',
+              bgLight: '#F7FAF8',
+              cyan: '#00A8B5'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- External Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="leaf-bg-pattern text-slate-800 antialiased min-h-screen flex flex-col justify-between selection:bg-emerald-200">
+
+  <!-- ================= TOP INSTITUTIONAL HEADER ================= -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-emerald-100 shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+      
+      <!-- Top Left: SIES Graduate School of Technology Logo & Branding -->
+      <div class="flex items-center gap-3.5">
+        <div class="flex items-center gap-2.5">
+          <!-- Rising Sun Icon -->
+          <svg class="w-11 h-11 text-amber-500 shrink-0" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true">
+            <circle cx="50" cy="50" r="18" fill="#F59E0B" />
+            <path d="M50 14 L50 2 M50 98 L50 86 M14 50 L2 50 M98 50 L86 50 M24.5 24.5 L16 16 M84 84 L75.5 75.5 M24.5 75.5 L16 84 M84 16 L75.5 24.5" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M50 20 A30 30 0 0 1 80 50 A30 30 0 0 1 50 80 A30 30 0 0 1 20 50 A30 30 0 0 1 50 20" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,4"/>
+          </svg>
+          
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <span class="font-serif font-black tracking-tight text-2xl text-slate-900 leading-none">SIES</span>
+              <span class="bg-[#009FB7] text-white text-[10px] sm:text-xs font-semibold px-2 py-0.5 rounded tracking-wide">
+                Graduate School of Technology <span class="font-normal opacity-90">(Autonomous)</span>
+              </span>
+            </div>
+            <div class="flex items-center gap-2 text-[10px] sm:text-[11px] font-medium tracking-wider text-slate-600 uppercase mt-0.5">
+              <span>Rise with Education</span>
+              <span class="w-1 h-1 rounded-full bg-slate-400"></span>
+              <span class="text-emerald-700 font-bold">NAAC A+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top Right: Department Details -->
+      <div class="text-center md:text-right border-t md:border-t-0 pt-2 md:pt-0 border-slate-100">
+        <p class="text-xs sm:text-sm font-semibold text-slate-900 leading-snug">
+          Department of Computer Science &amp; Engineering
+        </p>
+        <p class="text-[11px] sm:text-xs font-medium text-emerald-800">
+          Internet of Things &amp; Cyber Security including Blockchain Technology
+        </p>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= SUB-NAVBAR ================= -->
+  <div class="bg-[#1e5631] text-white px-4 sm:px-8 py-2.5 shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between text-xs sm:text-sm font-medium">
+      <div class="flex items-center gap-2">
+        <span class="font-bold tracking-widest text-base sm:text-lg flex items-center gap-1.5">
+          <i class="fa-solid fa-seedling text-emerald-300"></i>
+          भूमि <span class="text-xs font-normal text-emerald-200">| BHUMI</span>
+        </span>
+      </div>
+      
+      <div class="flex items-center gap-4 sm:gap-6 uppercase tracking-wider text-[11px] sm:text-xs font-semibold">
+        <span class="text-emerald-300 border-b-2 border-emerald-300 pb-0.5">Project Overview</span>
+        <a href="https://bhumi-bzr6.onrender.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-200 transition">Services</a>
+        <a href="https://github.com/PillaiSarveshX03/ProjectBHUMI" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-200 transition">Codebase</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN CONTENT HERO SECTION ================= -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14 flex-grow flex flex-col justify-center">
+
+    <div class="text-center max-w-4xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-900 text-xs sm:text-sm font-semibold mb-6 border border-emerald-200 shadow-sm">
+        <i class="fa-solid fa-leaf text-emerald-600"></i>
+        <span>Smart Agriculture &amp; Decision Support System</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.15] mb-5">
+        &ldquo;<span class="text-[#2d6a4f]">Smarter</span> Farming,<br class="hidden sm:inline" />
+        Better <span class="text-[#2d6a4f]">Tomorrow.&rdquo;</span>
+      </h1>
+
+      <p class="text-base sm:text-xl text-slate-600 font-medium tracking-wide mb-10">
+        Let's take an initiative in this growing world
+      </p>
+    </div>
+
+    <!-- Problem Statement Card -->
+    <div class="max-w-4xl mx-auto w-full bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-emerald-100/80 relative overflow-hidden mb-10">
+      <div class="absolute -right-20 -top-20 w-64 h-64 bg-emerald-100 rounded-full filter blur-3xl opacity-60 pointer-events-none"></div>
+      <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-emerald-50 rounded-full filter blur-3xl opacity-60 pointer-events-none"></div>
+
+      <div class="relative z-10">
+        <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-700 mb-3">
+          <i class="fa-solid fa-circle-exclamation text-amber-500"></i>
+          <span>Problem Statement &amp; Agricultural Solution</span>
+        </div>
+
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">
+          Empowering Precision Agriculture with Intelligent Decision Support
+        </h2>
+
+        <div class="space-y-4 text-slate-700 leading-relaxed text-sm sm:text-base bg-slate-50/70 p-5 rounded-2xl border border-slate-100">
+          <p class="font-normal text-slate-800">
+            <strong class="text-slate-900 font-semibold block mb-1 text-emerald-900 flex items-center gap-2">
+              <i class="fa-solid fa-triangle-exclamation text-amber-600 text-sm"></i> Challenge Faced by Farmers:
+            </strong>
+            Farmers face difficulties in selecting suitable crops and fertilizers due to variations in soil nutrients, rainfall, climate, and location.
+          </p>
+          <hr class="border-slate-200" />
