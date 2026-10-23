@@ -1,57 +1,68 @@
-/* ==========================================================================
-   Project BHUMI - Custom Stylesheet
-   ========================================================================== */
-
-/* Smooth card hover lift effect */
-.feature-card {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 32px -8px rgba(45, 106, 79, 0.15);
-}
-
-/* ==========================================================================
-   Custom Buttons (Matching BHUMI UI Theme)
-   ========================================================================== */
-
-/* Primary Pill Button - Open Repository Link */
-.btn-bhumi-primary {
-  background: linear-gradient(135deg, #1e5631 0%, #2d6a4f 100%);
-  transition: all 0.25s ease;
-  box-shadow: 0 6px 16px rgba(30, 86, 49, 0.3);
-}
-
-.btn-bhumi-primary:hover {
-  background: linear-gradient(135deg, #184728 0%, #245741 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(30, 86, 49, 0.4);
-}
-
-/* Secondary Pill Button - Open Deployment Link */
-.btn-bhumi-secondary {
-  background: #ffffff;
-  border: 2px solid #2d6a4f;
-  color: #1e5631;
-  transition: all 0.25s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-}
-
-.btn-bhumi-secondary:hover {
-  background: #eef8f1;
-  border-color: #1e5631;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(45, 106, 79, 0.16);
-}
-
-/* ==========================================================================
-   Background Pattern & Utilities
-   ========================================================================== */
-
-/* Subtle dotted grid texture across the page */
+/* Background subtle dot grid */
 .leaf-bg-pattern {
   background-color: #f7faf8;
   background-image: radial-gradient(#d8f3dc 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+/* Base button properties & smooth physics */
+.animated-green-btn {
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.025em;
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  user-select: none;
+}
+
+/* Button 1: Solid Emerald Green with Gradient Glow */
+.btn-primary-green {
+  background: linear-gradient(135deg, #1b4d3e 0%, #2d6a4f 50%, #40916c 100%);
+  background-size: 200% 200%;
+  box-shadow: 0 6px 18px rgba(27, 77, 62, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.btn-primary-green:hover {
+  background-position: right center;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(45, 106, 79, 0.45), 0 0 20px rgba(82, 183, 136, 0.3);
+}
+
+.btn-primary-green:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 4px 10px rgba(27, 77, 62, 0.3);
+}
+
+/* Button 2: Vibrant Forest Green with Pulse Glow */
+.btn-secondary-green {
+  background: linear-gradient(135deg, #134e4a 0%, #065f46 50%, #047857 100%);
+  background-size: 200% 200%;
+  box-shadow: 0 6px 18px rgba(6, 95, 70, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.btn-secondary-green:hover {
+  background-position: right center;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(4, 120, 87, 0.45), 0 0 20px rgba(52, 211, 153, 0.3);
+}
+
+.btn-secondary-green:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 4px 10px rgba(6, 95, 70, 0.3);
+}
+
+/* Shine sweep animation across both buttons on hover */
+.animated-green-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: skewX(-25deg);
+  transition: all 0.75s ease;
+}
+
+.animated-green-btn:hover::before {
+  left: 180%;
 }
